@@ -1,0 +1,3 @@
+mvn clean package
+docker build -t trukhinyuri/springbootremotedebug:latest .
+minikube image load trukhinyuri/springbootremotedebug:latest
