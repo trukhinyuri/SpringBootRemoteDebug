@@ -18,10 +18,4 @@ spec:
           ports:
             - name: http
               containerPort: 8080
-              protocol: TCP
-            - name: debug-port
-              containerPort: 5005
-              protocol: TCP
-          env:
-            - name: JAVA_TOOL_OPTIONS
-              value: '-Xdebug -agentlib:jdwp=transport=dt_socket,address=0.0.0.0:5005,server=y,suspend=n'
+
